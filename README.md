@@ -9,9 +9,9 @@ Centralized Feedback System for Graph Generation is an ASP.net based web applica
 
 ## Prerequisites
 
-1. ASP.net Framework
+1. ASP.net Framework (C Sharp)
 
-2. MySQL
+2. MySQL (5.6.14)
 
 
 
