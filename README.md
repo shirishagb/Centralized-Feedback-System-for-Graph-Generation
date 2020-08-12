@@ -39,5 +39,7 @@ Faculty add the student
 Added student list will be displayed on another page.
 
   • Student home page
+  
   • Student change password
+  
   • Student feedback form
