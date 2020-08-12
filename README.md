@@ -16,9 +16,9 @@ Centralized Feedback System for Graph Generation is an ASP.net based web applica
 
 
 
-This project is a .net based website which is getting all the feedback from the student through online.
+## This project is a .net based website which is getting all the feedback from the student through online.
 
-## Modules included in the project are below:
+Modules included in the project are below:
 
   - *Faculty*
 
