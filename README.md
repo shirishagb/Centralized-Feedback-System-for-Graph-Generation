@@ -27,10 +27,17 @@ Modules included in the project are below:
   
 - *Faculty*
 
-  Faculty add the student
+Faculty add the student
 
 • Student list who all registered for there course and a particular subject. That should automatically come to the student name in their form.
 
 • And they should select the student who opted for the subject and gives them rights to them to give the feedback.
 
 • The student who are regularly attending the classes they should only give it.
+
+
+Added student list will be displayed on another page.
+
+  • Student home page
+  • Student change password
+  • Student feedback form
