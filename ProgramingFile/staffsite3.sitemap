@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="tystaff.aspx" title="Thrid year"  description="">
+        <siteMapNode url="ftstaff.aspx" title="Fifth sem"  description="" />
+        <siteMapNode url="sxstaff.aspx" title="Sixth sem"  description="" />
+    </siteMapNode>
+</siteMap>

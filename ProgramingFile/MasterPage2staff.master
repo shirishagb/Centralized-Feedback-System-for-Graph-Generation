@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2staff.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .style1
+        {
+            font-size: x-large;
+        }
+        .style2
+        {
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="form2" runat="server">
+             <p style="background-color: #CCFFFF">
+                 &nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Image ID="Image1" runat="server" ImageURL="~/Image/Logo.jpg" 
+            Height="158px" Width="172px" style="margin-right: 25px"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Image ID="Image2" runat="server" ImageURL="~/Image/CO Logo.jpg" 
+            Height="141px" style="margin-left: 765px" Width="157px"/>
+        <span class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                 <span 
+                     class="style2">&nbsp; 
+                 Shri Siddheshwar Devasthan Trust&#39;s</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <span class="style1">&nbsp;<strong>Shri Siddheshwar Woman&#39;s Polytechnic,Solapur</strong></span><br />
+        <span class="style2" style="background-color: #CCFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T.P. No.-II, Plot No.-74, Rupa Bhavani Mandir Road, Bhavani Peth 
+        Solapur-413002.&nbsp;&nbsp;</span><br />
+                 &nbsp;&nbsp;</p>
+             <div style="background-color: #CCFFFF">
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="staffsite1" />
+        <asp:Menu ID="Menu1" runat="server" CssClass="Menu" EnableViewState="False" 
+                     IncludeStyleBlock="False" StaticDisplayLevels="2" Orientation="Vertical" 
+                     DataSourceID="SiteMapDataSource1">
+        </asp:Menu>
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="staffsite1" Font-Names="Verdana" 
+            Font-Size="0.8em" PathSeparator=" > ">
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#990000" />
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+        </asp:SiteMapPath>
+                 <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" SiteMapProvider="staffsite2" />
+                 <asp:Menu ID="Menu2" runat="server" CssClass="Menu" EnableViewState="False" 
+                     IncludeStyleBlock="False" StaticDisplayLevels="2" Orientation="Vertical" 
+                     DataSourceID="SiteMapDataSource2">
+                 </asp:Menu>
+                 <asp:SiteMapPath ID="SiteMapPath2" runat="server" SiteMapProvider="staffsite2" 
+                     Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" > ">
+                     <CurrentNodeStyle ForeColor="#333333" />
+                     <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                     <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                     <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                 </asp:SiteMapPath>
+                 <asp:SiteMapDataSource ID="SiteMapDataSource3" runat="server" SiteMapProvider="staffsite3" />
+                 <asp:Menu ID="Menu3" runat="server" CssClass="Menu" EnableViewState="False" 
+                     IncludeStyleBlock="False" StaticDisplayLevels="2" Orientation="Vertical" 
+                     DataSourceID="SiteMapDataSource3">
+                     </asp:Menu>
+                     <asp:SiteMapPath runat="server" SiteMapProvider="staffsite3" 
+                     Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" > ">
+                         <CurrentNodeStyle ForeColor="#333333" />
+                         <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                         <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                         <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                     </asp:SiteMapPath>
+                 
+        </div>
+    <div style="background-color: #CCFFFF">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+          </asp:ContentPlaceHolder>
+    </div>
+    
+    </form>
+        
+</body>
+</html>
